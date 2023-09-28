@@ -635,7 +635,7 @@
 
       <!-- !  services section start -->
       <section class="services section">
-        <img src="/assets/triangle.png" class="shape triangle">
+        <img src="/assets/triangle.png" class="shape triangle" />
         <div class="container">
           <div class="services-info">
             <h3 class="sub-heading">My services</h3>
@@ -671,8 +671,10 @@
                 <h3>Brand Identity</h3>
                 <p class="text">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Porro, esse eos. Molestiae corporis consequatur, 
+                  Porro, esse eos. Molestiae corporis consequatur,
+                </p>
               </div>
+
               <a href="#" class="btn secondary-btn">Explore More</a>
             </div>
             <div class="srv-card">
@@ -680,7 +682,7 @@
                 <h3>Product Design</h3>
                 <p class="text">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Porro, esse eos. Molestiae corporis consequatur, 
+                  Porro, esse eos. Molestiae corporis consequatur,
                 </p>
               </div>
               <a href="#" class="btn secondary-btn">Explore More</a>
@@ -690,7 +692,7 @@
                 <h3>Integration Design</h3>
                 <p class="text">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Porro, esse eos. Molestiae corporis consequatur, 
+                  Porro, esse eos. Molestiae corporis consequatur,
                 </p>
               </div>
               <a href="#" class="btn secondary-btn">Explore More</a>
@@ -705,7 +707,7 @@
               </div>
               <a href="#" class="btn secondary-btn">Explore More</a>
             </div>
-            <img src="/assets/square1.png" class="shape square">
+            <img src="/assets/square1.png" class="shape square" />
           </div>
         </div>
       </section>
@@ -713,11 +715,144 @@
       <!-- !  services section END -->
 
       <!-- !  protfolio section start  -->
-      
-      <section class="protfolio section">
+
+      <section class="portfolio section">
+        <div class="modal">
+          <div class="modal-overlay"></div>
+          <div class="slider-wrap">
+            <div class="prev-btn navigation">
+              <i class="uil uil-angle-left-b"></i>
+            </div>
+            <div class="images">
+              <img class="showImage" src="/assets/port1.jpg" alt="">
+              <img src="/assets/port2.png" alt="">
+              <img src="/assets/port3.jpg" alt="">
+              <img src="/assets/port4.png" alt="">
+              <img src="/assets/port5.png" alt="">
+              <img src="/assets/port6.jpg" alt="">
+            </div>
+            <div class="next-btn navigation">
+              <i class="uil uil-angle-right-b"></i>
+            </div>
+          </div>
+        </div>
         <div class="container">
-          <div class="protfolio-header"></div>
-          <div class="portfolio-gallery"></div>
+          <div class="portfolio-header">
+            <div class="portfolio-title">
+              <h3 class="sub-heading">Portfolio</h3>
+              <h1 class="heading">Latest Projects</h1>
+            </div>
+            <div class="filter-btns">
+              <button class="filter-btn" data-filter="all">All</button
+              ><button class="filter-btn" data-filter=".product">Product</button
+              ><button class="filter-btn" data-filter=".inter">Interacting</button
+              ><button class="filter-btn" data-filter=".web"> Web App</button>
+            </div>
+          </div>
+          <div class="portfolio-gallery">
+            <div class="mix prt-card inter">
+              <div class="prt-image">
+                <img src="/assets/port1.jpg" alt="">
+                <div class="prt-overlay">
+                  <span class="prt-icon zoom-icon" style="--i:0s">
+                    <i class="uil uil-search-plus"></i>
+                  </span>
+                  <a href="#" class="prt-icon" style="--i: .15s">
+                    <i class="uil uil-link-h"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="prt-desc">
+                <h3>Olido interaction</h3>
+                <a href="#" class="btn secondary-btn sm">Read More</a>
+              </div>
+            </div>
+            <div class="mix prt-card product">
+              <div class="prt-image">
+                <img src="/assets/port2.png" alt="">
+                <div class="prt-overlay">
+                  <span class="prt-icon zoom-icon" style="--i:0s">
+                    <i class="uil uil-search-plus"></i>
+                  </span>
+                  <a href="#" class="prt-icon" style="--i: .15s">
+                    <i class="uil uil-link-h"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="prt-desc">
+                <h3>John product design</h3>
+                <a href="#" class="btn secondary-btn sm">Read More</a>
+              </div>
+            </div>
+            <div class="mix prt-card web">
+              <div class="prt-image">
+                <img src="/assets/port3.jpg" alt="">
+                <div class="prt-overlay">
+                  <span class="prt-icon zoom-icon" style="--i:0s">
+                    <i class="uil uil-search-plus"></i>
+                  </span>
+                  <a href="#" class="prt-icon" style="--i: .15s">
+                    <i class="uil uil-link-h"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="prt-desc">
+                <h3>Meta Web Design</h3>
+                <a href="#" class="btn secondary-btn sm">Read More</a>
+              </div>
+            </div>
+            <div class="mix prt-card web">
+              <div class="prt-image">
+                <img src="/assets/port4.png" alt="">
+                <div class="prt-overlay">
+                  <span class="prt-icon zoom-icon" style="--i:0s">
+                    <i class="uil uil-search-plus"></i>
+                  </span>
+                  <a href="#" class="prt-icon" style="--i: .15s">
+                    <i class="uil uil-link-h"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="prt-desc">
+                <h3>TwitUp Web Design</h3>
+                <a href="#" class="btn secondary-btn sm">Read More</a>
+              </div>
+            </div>
+            <div class="mix prt-card inter">
+              <div class="prt-image">
+                <img src="/assets/port5.png" alt="">
+                <div class="prt-overlay">
+                  <span class="prt-icon zoom-icon" style="--i:0s">
+                    <i class="uil uil-search-plus"></i>
+                  </span>
+                  <a href="#" class="prt-icon" style="--i: .15s">
+                    <i class="uil uil-link-h"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="prt-desc">
+                <h3>Markus interaction</h3>
+                <a href="#" class="btn secondary-btn sm">Read More</a>
+              </div>
+            </div>
+            <div class="mix prt-card web">
+              <div class="prt-image">
+                <img src="/assets/port6.jpg" alt="">
+                <div class="prt-overlay">
+                  <span class="prt-icon zoom-icon" style="--i:0s">
+                    <i class="uil uil-search-plus"></i>
+                  </span>
+                  <a href="#" class="prt-icon" style="--i: .15s">
+                    <i class="uil uil-link-h"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="prt-desc">
+                <h3>Demga Web Design</h3>
+                <a href="#" class="btn secondary-btn sm">Read More</a>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -725,6 +860,7 @@
     </main>
 
     <!-- javascript files -->
+    <script src="/js/mixitup.min.js"></script>
     <script src="/js/app.js"></script>
   </body>
 </html>
