@@ -146,3 +146,15 @@ function changeImage(index) {
   images.forEach((img) => img.classList.remove("showImage"));
   images[index].classList.add("showImage");
 }
+
+//swiper scroll animation
+const swiper = new Swiper(".swiper",{
+  loop: true,
+  speed: 500,
+  autoplay: true,
+
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+});

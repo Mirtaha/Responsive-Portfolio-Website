@@ -13,7 +13,8 @@
       rel="stylesheet"
       href="https://unicons.iconscout.com/release/v4.0.8/css/line.css"
     />
-
+    <!-- --------- Swiper Library --------- -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
     <!-- -------CSS FILES------- -->
     <link rel="stylesheet" href="/css/style.css" />
   </head>
@@ -25,16 +26,16 @@
         <div class="links">
           <ul>
             <li>
-              <a href="" class="nav-link">Home</a>
+              <a href="#Home" class="nav-link">Home</a>
             </li>
             <li>
-              <a href="" class="nav-link">About</a>
+              <a href="#About" class="nav-link">About</a>
             </li>
             <li>
-              <a href="" class="nav-link">Services</a>
+              <a href="#Services" class="nav-link">Services</a>
             </li>
             <li>
-              <a href="" class="nav-link">Portfolio</a>
+              <a href="#Portfolio" class="nav-link">Portfolio</a>
             </li>
             <li>
               <a href="" class="nav-link">Contact</a>
@@ -47,7 +48,7 @@
     <!-- ! nav design END -->
     <main>
       <!-- !show case area start -->
-      <section class="showcase-area">
+      <section class="showcase-area" id="Home">
         <img src="/assets/square1.png" class="shape square" alt="" />
         <div class="container">
           <div class="showcase-info">
@@ -73,7 +74,7 @@
       <!-- !show case area END -->
 
       <!-- !about section start -->
-      <section class="about section">
+      <section class="about section" id="About">
         <img src="/assets/triangle.png" alt="" class="shape triangle" />
         <div class="container">
           <div class="about-grid">
@@ -572,7 +573,7 @@
       <!-- !about section END -->
 
       <!-- ! Skills section start  -->
-      <section class="skills section">
+      <section class="skills section" id="Skills">
         <div class="container">
           <div class="skills-box">
             <div class="box-heading">
@@ -634,7 +635,7 @@
       <!-- ! Skills section END  -->
 
       <!-- !  services section start -->
-      <section class="services section">
+      <section class="services section" id="Services">
         <img src="/assets/triangle.png" class="shape triangle" />
         <div class="container">
           <div class="services-info">
@@ -716,7 +717,7 @@
 
       <!-- !  protfolio section start  -->
 
-      <section class="portfolio section">
+      <section class="portfolio section" id="Portfolio">
         <div class="modal">
           <div class="modal-overlay"></div>
           <div class="slider-wrap">
@@ -724,12 +725,12 @@
               <i class="uil uil-angle-left-b"></i>
             </div>
             <div class="images">
-              <img class="showImage" src="/assets/port1.jpg" alt="">
-              <img src="/assets/port2.png" alt="">
-              <img src="/assets/port3.jpg" alt="">
-              <img src="/assets/port4.png" alt="">
-              <img src="/assets/port5.png" alt="">
-              <img src="/assets/port6.jpg" alt="">
+              <img class="showImage" src="/assets/port1.jpg" alt="" />
+              <img src="/assets/port2.png" alt="" />
+              <img src="/assets/port3.jpg" alt="" />
+              <img src="/assets/port4.png" alt="" />
+              <img src="/assets/port5.png" alt="" />
+              <img src="/assets/port6.jpg" alt="" />
             </div>
             <div class="next-btn navigation">
               <i class="uil uil-angle-right-b"></i>
@@ -745,19 +746,20 @@
             <div class="filter-btns">
               <button class="filter-btn" data-filter="all">All</button
               ><button class="filter-btn" data-filter=".product">Product</button
-              ><button class="filter-btn" data-filter=".inter">Interacting</button
-              ><button class="filter-btn" data-filter=".web"> Web App</button>
+              ><button class="filter-btn" data-filter=".inter">
+                Interacting</button
+              ><button class="filter-btn" data-filter=".web">Web App</button>
             </div>
           </div>
           <div class="portfolio-gallery">
             <div class="mix prt-card inter">
               <div class="prt-image">
-                <img src="/assets/port1.jpg" alt="">
+                <img src="/assets/port1.jpg" alt="" />
                 <div class="prt-overlay">
-                  <span class="prt-icon zoom-icon" style="--i:0s">
+                  <span class="prt-icon zoom-icon" style="--i: 0s">
                     <i class="uil uil-search-plus"></i>
                   </span>
-                  <a href="#" class="prt-icon" style="--i: .15s">
+                  <a href="#" class="prt-icon" style="--i: 0.15s">
                     <i class="uil uil-link-h"></i>
                   </a>
                 </div>
@@ -769,12 +771,12 @@
             </div>
             <div class="mix prt-card product">
               <div class="prt-image">
-                <img src="/assets/port2.png" alt="">
+                <img src="/assets/port2.png" alt="" />
                 <div class="prt-overlay">
-                  <span class="prt-icon zoom-icon" style="--i:0s">
+                  <span class="prt-icon zoom-icon" style="--i: 0s">
                     <i class="uil uil-search-plus"></i>
                   </span>
-                  <a href="#" class="prt-icon" style="--i: .15s">
+                  <a href="#" class="prt-icon" style="--i: 0.15s">
                     <i class="uil uil-link-h"></i>
                   </a>
                 </div>
@@ -786,12 +788,12 @@
             </div>
             <div class="mix prt-card web">
               <div class="prt-image">
-                <img src="/assets/port3.jpg" alt="">
+                <img src="/assets/port3.jpg" alt="" />
                 <div class="prt-overlay">
-                  <span class="prt-icon zoom-icon" style="--i:0s">
+                  <span class="prt-icon zoom-icon" style="--i: 0s">
                     <i class="uil uil-search-plus"></i>
                   </span>
-                  <a href="#" class="prt-icon" style="--i: .15s">
+                  <a href="#" class="prt-icon" style="--i: 0.15s">
                     <i class="uil uil-link-h"></i>
                   </a>
                 </div>
@@ -803,12 +805,12 @@
             </div>
             <div class="mix prt-card web">
               <div class="prt-image">
-                <img src="/assets/port4.png" alt="">
+                <img src="/assets/port4.png" alt="" />
                 <div class="prt-overlay">
-                  <span class="prt-icon zoom-icon" style="--i:0s">
+                  <span class="prt-icon zoom-icon" style="--i: 0s">
                     <i class="uil uil-search-plus"></i>
                   </span>
-                  <a href="#" class="prt-icon" style="--i: .15s">
+                  <a href="#" class="prt-icon" style="--i: 0.15s">
                     <i class="uil uil-link-h"></i>
                   </a>
                 </div>
@@ -820,12 +822,12 @@
             </div>
             <div class="mix prt-card inter">
               <div class="prt-image">
-                <img src="/assets/port5.png" alt="">
+                <img src="/assets/port5.png" alt="" />
                 <div class="prt-overlay">
-                  <span class="prt-icon zoom-icon" style="--i:0s">
+                  <span class="prt-icon zoom-icon" style="--i: 0s">
                     <i class="uil uil-search-plus"></i>
                   </span>
-                  <a href="#" class="prt-icon" style="--i: .15s">
+                  <a href="#" class="prt-icon" style="--i: 0.15s">
                     <i class="uil uil-link-h"></i>
                   </a>
                 </div>
@@ -837,12 +839,12 @@
             </div>
             <div class="mix prt-card web">
               <div class="prt-image">
-                <img src="/assets/port6.jpg" alt="">
+                <img src="/assets/port6.jpg" alt="" />
                 <div class="prt-overlay">
-                  <span class="prt-icon zoom-icon" style="--i:0s">
+                  <span class="prt-icon zoom-icon" style="--i: 0s">
                     <i class="uil uil-search-plus"></i>
                   </span>
-                  <a href="#" class="prt-icon" style="--i: .15s">
+                  <a href="#" class="prt-icon" style="--i: 0.15s">
                     <i class="uil uil-link-h"></i>
                   </a>
                 </div>
@@ -857,9 +859,75 @@
       </section>
 
       <!-- !  protfolio section END  -->
+
+      <!-- !  testimonials section start -->
+      <section class="testimonials section">
+        <div class="container">
+          <div class="section-background">
+            <img src="/assets/person2.png" class="person" />
+            <img src="/assets/circle2.png" class="circle" />
+            <img src="/assets/square1.png" class="square" />
+          </div>
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="client">
+                  <img src="/assets/testi1.png" alt="" />
+                  <div class="client-info">
+                    <h4>Kelly Williams</h4>
+                    <h5>Executive Officer <a href="$">@ABEnergy</a></h5>
+                  </div>
+                </div>
+                <q class="text">
+                  lorem ipsum is simply dummy text of the printing and
+                  typesetting industry. lorem ipsum has been the industry's
+                  standard dummy text ever since the 1500s, when an unknown
+                  printer make book, but also the leap into electronic
+                  typesetting
+                </q>
+              </div>
+              <div class="swiper-slide">
+                <div class="client">
+                  <img src="/assets/testi2.png" alt="" />
+                  <div class="client-info">
+                    <h4>Witold Gislenus</h4>
+                    <h5>CEO OF <a href="$">@Eco_Focus</a></h5>
+                  </div>
+                </div>
+                <q class="text">
+                  lorem ipsum is simply dummy text of the printing and
+                  typesetting industry. lorem ipsum has been the industry's
+                  standard dummy text ever since the 1500s.
+                </q>
+              </div>
+              <div class="swiper-slide">
+                <div class="client">
+                  <img src="/assets/testi3.png" alt="" />
+                  <div class="client-info">
+                    <h4>Ben Dennis</h4>
+                    <h5>Software Engineer<a href="$">@Epic_dev</a></h5>
+                  </div>
+                </div>
+                <q class="text">
+                  lorem ipsum is simply dummy text of the printing and
+                  typesetting industry. lorem ipsum has been the industry's
+                  standard dummy text ever since the 1500s.
+                </q>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+          <div class="testimonials-title">
+            <h3 class="sub-heading">Testimonials</h3>
+            <h1 class="heading">Hear from my happy clients</h1>
+          </div>
+        </div>
+      </section>
+      <!-- !  testimonials section END -->
     </main>
 
     <!-- javascript files -->
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script src="/js/mixitup.min.js"></script>
     <script src="/js/app.js"></script>
   </body>
