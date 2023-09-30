@@ -14,7 +14,14 @@ const images = document.querySelectorAll(".images img");
 const prev_btn = document.querySelector(".prev-btn");
 const next_btn = document.querySelector(".next-btn");
 
+const links = document.querySelectorAll(".nav-link");
+
+const toggle_btn = document.querySelector(".toggle-btn");
+
+const hamburger = document.querySelector(".hamburger");
+
 window.addEventListener("scroll", () => {
+  activeLink();
   if (!skillsPlayed) skillsCounter();
   if (!mlPlayed) mlCounter();
 });
@@ -124,23 +131,22 @@ modal_overlay.addEventListener("click", () => {
   document.body.classList.remove("stopScrolling");
 });
 
-prev_btn.addEventListener("click", () =>{
-  if(currentIndex === 0){
+prev_btn.addEventListener("click", () => {
+  if (currentIndex === 0) {
     currentIndex = 5;
-  }else{
+  } else {
     currentIndex--;
   }
   changeImage(currentIndex);
 });
-next_btn.addEventListener("click", () =>{
-  if(currentIndex === 5){
+next_btn.addEventListener("click", () => {
+  if (currentIndex === 5) {
     currentIndex = 0;
-  }else{
+  } else {
     currentIndex++;
   }
   changeImage(currentIndex);
 });
-
 
 function changeImage(index) {
   images.forEach((img) => img.classList.remove("showImage"));
@@ -148,7 +154,7 @@ function changeImage(index) {
 }
 
 //swiper scroll animation
-const swiper = new Swiper(".swiper",{
+const swiper = new Swiper(".swiper", {
   loop: true,
   speed: 500,
   autoplay: true,
@@ -158,3 +164,57 @@ const swiper = new Swiper(".swiper",{
     clickable: true,
   },
 });
+
+// change active links
+function activeLink() {
+  let sections = document.querySelectorAll("section[id]");
+  let passedSections = Array.from(sections)
+    .map((sct, i) => {
+      return {
+        y: sct.getBoundingClientRect().top - header.offsetHeight,
+        id: i,
+      };
+    })
+    .filter((sct) => sct.y <= 0);
+
+  let currSectionID = passedSections.at(-1).id;
+
+  links.forEach((l) => l.classList.remove("active"));
+  links[currSectionID].classList.add("active");
+}
+
+activeLink();
+
+// dark theme animation.
+
+let firstTheme = localStorage.getItem("dark");
+changeTheme(+firstTheme);
+
+function changeTheme(isDark) {
+  if (isDark) {
+    document.body.classList.add("dark");
+    toggle_btn.classList.replace("uil-moon", "uil-sun");
+    localStorage.setItem("dark", 1);
+  } else {
+    document.body.classList.remove("dark");
+    toggle_btn.classList.replace("uil-sun", "uil-moon");
+    localStorage.setItem("dark", 0);
+  }
+}
+
+toggle_btn.addEventListener("click", () => {
+  changeTheme(!document.body.classList.contains("dark"));
+});
+
+// open and close navbar menu
+hamburger.addEventListener("click", () => {
+  document.body.classList.toggle("open");
+  document.body.classList.toggle("stopScrolling");
+});
+
+links.forEach((link) =>
+  link.addEventListener("click", () => {
+    document.body.classList.remove("open");
+    document.body.classList.remove("stopScrolling");
+  })
+);
